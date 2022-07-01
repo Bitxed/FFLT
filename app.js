@@ -1,3 +1,7 @@
+
+
+
+
 //Countdown Timer
 const clockdiv = document.getElementById("countdown");
 const countDownTime = new Date(
@@ -79,6 +83,19 @@ function myFunction() {
 function myFunction1() {
   // Get the snackbar DIV
   var x = document.getElementById("MerchStore");
+
+  // Add the "show" class to DIV
+  x.className = "show";
+
+  // After 3 seconds, remove the show class from DIV
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
+
+
+function ClaimYourBonus() {
+  // Get the snackbar DIV
+  var x = document.getElementById("ClaimBonus");
 
   // Add the "show" class to DIV
   x.className = "show";
